@@ -1,2 +1,3 @@
-# ce-skills
-Public skills for general use.
+# Free Sauce skills
+
+Some public skills for general use.

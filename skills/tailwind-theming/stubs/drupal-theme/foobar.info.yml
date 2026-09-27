@@ -1,0 +1,14 @@
+name: 'stub tailwind'
+type: theme
+base theme: false
+description: 'Stub of tailwind bits in a drupal theme'
+libraries:
+  - fstheme/global-js
+  - fstheme/global-css
+
+# Conflicts with Tailwind. @see core-hidden.css.
+libraries-override:
+  system/base:
+    css:
+      component:
+        css/components/hidden.module.css: false

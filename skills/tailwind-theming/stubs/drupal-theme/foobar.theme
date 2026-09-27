@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * This is optional for Tailwind but in the spirit of what you're trying to
+ * do with Tailwind, it removes a lot of structural markup around fields.
+ */
+function foobar_theme_suggestions_field_alter(array &$hooks, array $vars): void {
+  switch ($vars['element']['#field_type'] ?? NULL) {
+    case 'string':
+    case 'list_string':
+    case 'text_long':
+    case 'link':
+    case 'created':
+    case 'boolean':
+    case 'image':
+    case 'entity_reference':
+    case 'entity_reference_revisions':
+    case 'block_field':
+      $hooks[] = 'field__bare';
+      return;
+  }
+}

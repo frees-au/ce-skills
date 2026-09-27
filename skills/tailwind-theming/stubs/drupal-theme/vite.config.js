@@ -1,0 +1,26 @@
+import { resolve } from 'path';
+import tailwindcss from '@tailwindcss/vite';
+
+export default {
+  plugins: [tailwindcss()],
+  build: {
+    manifest: true,
+    emptyOutDir: true,
+    rollupOptions: {
+      input: [
+        "/src/js/main.js",
+      ],
+      // Remove the [hash] since Drupal will take care of that.
+      output: {
+        entryFileNames: `[name].js`,
+        chunkFileNames: `chunks/[name].[hash].js`,
+        assetFileNames: `[name].[ext]`,
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      $images: resolve('./images')
+    }
+  },
+};
