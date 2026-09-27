@@ -1,87 +1,25 @@
 @import "tailwindcss";
 
-/* Source globs — replaces tailwind.config.js `content` */
+/* Source globs to help discover tailwind classes */
 @source "../../templates/**/*.twig";
 @source "../../../../../config/sync/editor.editor.safe_html.yml";
 @source "../ckeditor5.css";
 @source "../ckeditor5_templates.json";
 
-/* Plugins */
-@plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms";
-
-/* Theme — replaces tailwind.config.js `theme` + `theme.extend` */
 @theme {
-  /* Colours */
-  --color-fs-red: #851520;
-  --color-fs-red-tint: #B11F24;
-  --color-fs-dark-grey: #BFBFBF;
-  --color-fs-light-grey: #F5F5F5;
-
-  /* Typography */
-  --font-mono: 'Cutive Mono', 'Sans-Serif';
-  --font-sans: 'Open Sans', 'Sans-Serif';
-
-  /* Breakpoints — rem units for Tailwind 4 */
-  --breakpoint-sm: 32rem;
-  --breakpoint-md: 48rem;
-  --breakpoint-lg: 64rem;
-  --breakpoint-xl: 120rem;
-  --breakpoint-2xl: 120rem;
-
-  /* Shadow */
-  --shadow-popped: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
-
-  /* Animation */
-  --animate-slideIn: slideIn 1s ease-in-out forwards var(--delay, 0);
+  --color-black: rgb(0 0 0 / 100%);
 }
 
-@keyframes slideIn {
-  0%   { opacity: 0; transform: translateY(100%); }
-  100% { opacity: 1; transform: translateY(0); }
+:root {
+  /*...*/
 }
 
+/* Use @layer base as a global style guide */
 @layer base {
-  h1 {
-    @apply font-mono text-5xl leading-12 mt-8;
+
+  /* Global customisation of standard tags */
+  body {
+    /*...*/
   }
 
-  h2 {
-    @apply font-mono text-4xl leading-10 mt-8;
-  }
-
-  h3 {
-    @apply font-mono text-3xl leading-10 mt-8;
-  }
-
-  h4 {
-    @apply font-mono text-2xl leading-9 mt-8;
-  }
-
-  h5 {
-    @apply font-mono text-xl leading-8 mt-8;
-  }
-
-  @media (width >= 48rem) {
-    h1 { @apply text-5xl leading-10; }
-    h2 { @apply text-4xl leading-10; }
-    h3 { @apply text-3xl leading-9; }
-    h4 { @apply text-2xl leading-8; }
-    h5 { @apply text-xl leading-8; }
-  }
-
-  *+p {
-    @apply text-lg mt-4 lg:mt-8;
-  }
-}
-
-@layer utilities {
-  .container-content {
-    @apply w-auto lg:max-w-220;
-  }
-
-  /* Used on content in header/main/footer to control content gutter and alignment down the page. */
-  .page-default-container-span {
-    @apply px-6 w-auto sm:mx-auto sm:w-150 md:mx-0 md:w-200 md:pl-24 lg:w-400 lg:pl-48;
-  }
 }
