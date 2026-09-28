@@ -1,6 +1,6 @@
 ---
 name: css-with-tac-components
-author: Si Hobbs (thanks to Brynn Briedis)
+author: Brynn Briedis & Simon Hobbs
 description: Apply a "TAC" (Tag, Attribute, Class) strategy to create clean semantic html components like `<fs-badge variant="tertiary">` rather than excessive use of divs, spans and classes, and some accessibility and other sugar on top.
 metadata:
   short-description: CSS with TAC components technique for web projects

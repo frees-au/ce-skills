@@ -1,6 +1,6 @@
 ---
 name: tailwind-theming
-author: Si Hobbs
+author: Simon Hobbs
 description: Build or adjust custom themes using Tailwind CSS 4 while respecting existing theme structure, asset libraries, and project-specific theming boundaries. Includes stubs for Shopify and Drupal.
 metadata:
   short-description: Tailwind 4 theming best practice

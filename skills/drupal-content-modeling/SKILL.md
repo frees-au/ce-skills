@@ -1,6 +1,6 @@
 ---
 name: drupal-site-building
-author: Si Hobbs
+author: Simon Hobbs
 description: Analyze and change Drupal content models using config/sync, entity displays, field storage, permissions, and migrations with a semantic approach to naming and using the Drupal config as the source of truth.
 metadata:
   short-description: Drupal content modeling

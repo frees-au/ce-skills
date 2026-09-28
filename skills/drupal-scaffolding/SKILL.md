@@ -1,6 +1,6 @@
 ---
 name: drupal-scaffolding
-author: Si Hobbs
+author: Simon Hobbs
 description: Structural considerations when setting up a modern Drupal application, typically only applies on setting up a new site.
 metadata:
   short-description: Drupal Scaffolding
