@@ -16,8 +16,6 @@ to a site can be more of a philosophy than a set of instructions. - Si
 
 ### drupal-scaffolding
 
-(Skill is TODO)
-
 I'm very fussy about Drupal project scaffolding. I have been exposed to the 
 scaffolding strategies of most web shops in Australia, and the victim of 
 many poorly implemented ones in project accellerators like GovCMS, BLT,
@@ -32,10 +30,9 @@ done correctly. In addition there might be some quirks I wanted to capture
 in the stub themes, such as in Drupal how might you pick up on tailwind classes
 which are added via ckeditor snippets? - Si
 
-### tag-attribute-class-strategy
+### css-with-tac-components
 
-(Skill is TODO)
-
-This is my interpretation of Jordan Brennan's [TAC methodology](https://jordanbrennan.hashnode.dev/tac-a-new-css-methodology), tuned by discussions with [Brynn Briedis](https://brynnthe.dev/).
-The skill guides the LLM to make good choices and avoid anti-patterns when
-there is a `<foo-barbaz>` strategy in place.
+I really like clean semantic markup, and sometimes that leans more to Tailwind,
+and sometimes that leans to Jordan Brennan's [TAC methodology](https://jordanbrennan.hashnode.dev/tac-a-new-css-methodology). This skill is based on
+[Brynn Briedis](https://brynnthe.dev/)' CSS skill which is very TAC oriented. I
+adjusted it to allow for Tailwind exceptions and a few other tweaks.
