@@ -22,6 +22,13 @@ scaffolding strategies of most web shops in Australia, and the victim of
 many poorly implemented ones in project accellerators like GovCMS, BLT,
 and so on. If you're going to run a project for years, then make it nice. [View skill](https://github.com/frees-au/ce-skills/blob/main/skills/drupal-scaffolding/SKILL.md)
 
+### drupal-auto-dev
+
+This skill is designed for low-setup agent/operator local collaboration.
+The goal is to start the server using php and sqlite, and to make wholesale
+changes, optionally in a collaborative exercise with the operator (say in Codex).
+It's a bit WIP as I'm pulling together a few techniques. [View skill](https://github.com/frees-au/ce-skills/blob/main/skills/drupal-auto-dev/SKILL.md)
+
 ### tailwind-theming 
 
 I don't generally want to use someone else's tailwind templates when it comes
